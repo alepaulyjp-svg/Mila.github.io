@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva en Cafetería Amaranto</title>
+    <link rel="stylesheet" href="style.css/stylecf.css">
+</head>
+<body>
+    <header>
+        <h1>Amaranto</h1>
+        <h2>Formulario de Reservas</h2>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos del Cliente</legend>
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="0999999999" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalles de la Reserva</legend>
+
+                <label for="fecha">Fecha de la reserva:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <label for="personas">Número de personas:</label>
+                <input type="number" id="personas" name="personas" min="1" max="20" required>
+
+                <label for="mensaje">Mensaje o solicitud especial:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ejemplo: mesa cerca de la ventana..."></textarea>
+            </fieldset>
+
+            <div class="botones">
+                <input type="submit" value="Enviar Reserva">
+                <input type="reset" value="Limpiar">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 Cafetería Dulce Aroma | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
